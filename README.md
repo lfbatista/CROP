@@ -219,6 +219,6 @@ X. Li, Y. Deng, L. Ding, Study on Precision Agriculture Monitoring Framework Bas
 ###Authors
 Luis Batista
 
-Pedro Reis
-
 Paulo Fernandes
+
+Pedro Reis
