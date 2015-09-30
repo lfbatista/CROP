@@ -93,44 +93,44 @@ Subsequently, these values stabilized with constant delivery rates, still only w
 
 ####Autonomy tests
 **With Solar Panles**
-![with solar panels](http://i.imgur.com/STFIbm0.jpg)
 
+![Tests with solar panels](http://i.imgur.com/STFIbm0.jpg)
     FIG. 2.1: Tests with solar panels
-    
+![Energy readings in test with 1 hour hibernation having solar panel in horizontal position](http://i.imgur.com/X6BsaVf.png) 
     FIG. 2.2: Energy readings in test with 1 hour hibernation having solar panel in horizontal position
-    
+![Energy readings in test with continuous debt having solar panels in horizontal position](http://i.imgur.com/AzSz6wO.png)   
     FIG. 2.3: Energy readings in test with continuous debt having solar panels in horizontal position
-    
+![Energy readings in test with continuous debt having solar panels in 45º position](http://i.imgur.com/hn0XXbP.png)   
     FIG. 2.4: Energy readings in test with continuous debt having solar panels in 45º position
-    
+![Soil samples collect](http://i.imgur.com/tiAcQbC.jpg)   
     FIG. 2.5: Soil samples collect
-    
+![Soil samples drying at the laboratory's oven](http://i.imgur.com/gRs8m4b.jpg)   
     FIG. 2.6: Soil samples drying at the laboratory's oven
-    
+![Reading of soil moisture level using Sensor on Arduino board](http://i.imgur.com/gq3ki5P.jpg)   
     FIG. 2.7: Reading of soil moisture level using Sensor on Arduino board
-    
+![Humus soil portions with different moisture levels](http://i.imgur.com/N0ho9ZX.jpg)   
     FIG. 2.8: Humus soil portions with different moisture levels
-    
+![Grit soil portions with different moisture levels](http://i.imgur.com/N0ho9ZX.jpg)   
     FIG. 2.9: Grit soil portions with different moisture levels
-    
+![Lab calculations for each portion of soil where readings were made](http://i.imgur.com/xjAvFKx.jpg)   
     FIG. 2.10: Lab calculations for each portion of soil where readings were made
-    
+![Moisture sensor readings on each portion](http://i.imgur.com/lk6nSjs.png)   
     FIG. 2.11: Moisture sensor readings on each portion
-    
+![Moisture sensor calibration](http://i.imgur.com/8IOII2j.png)   
     FIG. 2.12: Moisture sensor calibration
-    
+![Temperature tests at the laboratory for sensor calibration on 20ºC](http://i.imgur.com/kxczF3x.jpg)   
     FIG. 2.13: Temperature tests at the laboratory for sensor calibration on 20ºC
-    
+![Temperature tests at the laboratory for sensor calibration on 50º](http://i.imgur.com/9KlEhL0.jpg)   
     FIG. 2.14: Temperature tests at the laboratory for sensor calibration on 50º
-    
+![Waspmote node inside the oven](http://i.imgur.com/vnpp4y2.jpg)   
     FIG. 2.15: Waspmote node inside the oven
-    
+![Temperature sensor readings inside the oven with 20ºC](http://i.imgur.com/H4w1Hrq.png)   
     FIG. 2.16: Temperature sensor readings inside the oven with 20ºC
-    
+![Temperature sensor readings inside the oven with 30ºC](http://i.imgur.com/d83JDws.png)   
     FIG. 2.17: Temperature sensor readings inside the oven with 30ºC
-    
+![Temperature sensor readings inside the oven with 40ºC](http://i.imgur.com/xsO9GaC.png)       
     FIG. 2.18: Temperature sensor readings inside the oven with 40ºC
-    
+![Temperature sensor readings inside the oven with 50ºC](http://i.imgur.com/CFrqz4g.png)    
     FIG. 2.19: Temperature sensor readings inside the oven with 50ºC
 ![Temperature sensor readings inside the oven with 50ºC](http://i.imgur.com/3wHnXJv.png)
     FIG. 2.20: Temperature sensor calibration
