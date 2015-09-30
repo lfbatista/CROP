@@ -1,0 +1,59 @@
+c:\users\pedro\documents\visual studio 2013\Projects\WindowsFormsApplication3\WindowsFormsApplication3\obj\Debug\WindowsFormsApplication3.Form1.resources
+c:\users\pedro\documents\visual studio 2013\Projects\WindowsFormsApplication3\WindowsFormsApplication3\obj\Debug\WindowsFormsApplication3.Properties.Resources.resources
+c:\users\pedro\documents\visual studio 2013\Projects\WindowsFormsApplication3\WindowsFormsApplication3\obj\Debug\WindowsFormsApplication3.csproj.GenerateResource.Cache
+c:\users\pedro\documents\visual studio 2013\Projects\WindowsFormsApplication3\WindowsFormsApplication3\obj\Debug\WindowsFormsApplication3.csprojResolveAssemblyReference.cache
+C:\Users\Pedro\documents\visual studio 2013\Projects\WindowsFormsApplication3\WindowsFormsApplication3\bin\Debug\Data Receiver.exe.config
+C:\Users\Pedro\documents\visual studio 2013\Projects\WindowsFormsApplication3\WindowsFormsApplication3\bin\Debug\Data Receiver.exe
+C:\Users\Pedro\documents\visual studio 2013\Projects\WindowsFormsApplication3\WindowsFormsApplication3\bin\Debug\Data Receiver.pdb
+C:\Users\Pedro\documents\visual studio 2013\Projects\WindowsFormsApplication3\WindowsFormsApplication3\obj\Debug\Data Receiver.exe
+C:\Users\Pedro\documents\visual studio 2013\Projects\WindowsFormsApplication3\WindowsFormsApplication3\obj\Debug\Data Receiver.pdb
+C:\Users\Pedro\Desktop\WindowsFormsApplication3\WindowsFormsApplication3\bin\Debug\Data Receiver.exe.config
+C:\Users\Pedro\Desktop\WindowsFormsApplication3\WindowsFormsApplication3\obj\Debug\Data Receiver.exe
+C:\Users\Pedro\Desktop\WindowsFormsApplication3\WindowsFormsApplication3\obj\Debug\Data Receiver.pdb
+C:\Users\Pedro\Desktop\WindowsFormsApplication3\WindowsFormsApplication3\bin\Debug\Data Receiver.exe
+C:\Users\Pedro\Desktop\WindowsFormsApplication3\WindowsFormsApplication3\bin\Debug\Data Receiver.pdb
+C:\Users\Pedro\Desktop\WindowsFormsApplication3\WindowsFormsApplication3\obj\Debug\WindowsFormsApplication3.csprojResolveAssemblyReference.cache
+C:\Users\Pedro\Desktop\WindowsFormsApplication3\WindowsFormsApplication3\obj\Debug\WindowsFormsApplication3.Form1.resources
+C:\Users\Pedro\Desktop\WindowsFormsApplication3\WindowsFormsApplication3\obj\Debug\WindowsFormsApplication3.Properties.Resources.resources
+C:\Users\Pedro\Desktop\WindowsFormsApplication3\WindowsFormsApplication3\obj\Debug\WindowsFormsApplication3.csproj.GenerateResource.Cache
+C:\Users\Pedro\Desktop\Nova pasta (2)\WindowsFormsApplication3\WindowsFormsApplication3\bin\Debug\Data Receiver.exe.config
+C:\Users\Pedro\Desktop\Nova pasta (2)\WindowsFormsApplication3\WindowsFormsApplication3\obj\Debug\Data Receiver.exe
+C:\Users\Pedro\Desktop\Nova pasta (2)\WindowsFormsApplication3\WindowsFormsApplication3\obj\Debug\Data Receiver.pdb
+C:\Users\Pedro\Desktop\Nova pasta (2)\WindowsFormsApplication3\WindowsFormsApplication3\bin\Debug\Data Receiver.exe
+C:\Users\Pedro\Desktop\Nova pasta (2)\WindowsFormsApplication3\WindowsFormsApplication3\bin\Debug\Data Receiver.pdb
+C:\Users\Pedro\Desktop\Nova pasta (2)\WindowsFormsApplication3\WindowsFormsApplication3\obj\Debug\WindowsFormsApplication3.csprojResolveAssemblyReference.cache
+C:\Users\Pedro\Desktop\Nova pasta (2)\WindowsFormsApplication3\WindowsFormsApplication3\obj\Debug\WindowsFormsApplication3.Form1.resources
+C:\Users\Pedro\Desktop\Nova pasta (2)\WindowsFormsApplication3\WindowsFormsApplication3\obj\Debug\WindowsFormsApplication3.Properties.Resources.resources
+C:\Users\Pedro\Desktop\Nova pasta (2)\WindowsFormsApplication3\WindowsFormsApplication3\obj\Debug\WindowsFormsApplication3.csproj.GenerateResource.Cache
+C:\Users\paulo.fernandes\Desktop\WindowsFormsApplication3\WindowsFormsApplication3\bin\Debug\Data Receiver.exe.config
+C:\Users\paulo.fernandes\Desktop\WindowsFormsApplication3\WindowsFormsApplication3\obj\Debug\Data Receiver.exe
+C:\Users\paulo.fernandes\Desktop\WindowsFormsApplication3\WindowsFormsApplication3\obj\Debug\Data Receiver.pdb
+C:\Users\paulo.fernandes\Desktop\WindowsFormsApplication3\WindowsFormsApplication3\bin\Debug\Data Receiver.exe
+C:\Users\paulo.fernandes\Desktop\WindowsFormsApplication3\WindowsFormsApplication3\bin\Debug\Data Receiver.pdb
+C:\Users\paulo.fernandes\Desktop\WindowsFormsApplication3\WindowsFormsApplication3\obj\Debug\WindowsFormsApplication3.csprojResolveAssemblyReference.cache
+C:\Users\paulo.fernandes\Desktop\WindowsFormsApplication3\WindowsFormsApplication3\obj\Debug\WindowsFormsApplication3.Form1.resources
+C:\Users\paulo.fernandes\Desktop\WindowsFormsApplication3\WindowsFormsApplication3\obj\Debug\WindowsFormsApplication3.Properties.Resources.resources
+C:\Users\paulo.fernandes\Desktop\WindowsFormsApplication3\WindowsFormsApplication3\obj\Debug\WindowsFormsApplication3.csproj.GenerateResource.Cache
+C:\Users\paulo.fernandes\Desktop\WindowsFormsApplication3\WindowsFormsApplication3\bin\Debug\Data Receiver.exe.manifest
+C:\Users\paulo.fernandes\Desktop\WindowsFormsApplication3\WindowsFormsApplication3\bin\Debug\Data Receiver.application
+C:\Users\paulo.fernandes\Desktop\WindowsFormsApplication3\WindowsFormsApplication3\obj\Debug\Data Receiver.exe.manifest
+C:\Users\paulo.fernandes\Desktop\WindowsFormsApplication3\WindowsFormsApplication3\obj\Debug\Data Receiver.application
+C:\Users\paulo.fernandes\Dropbox\Mestrado\Redes de Sensores\WSN\AplicaçãoBS\versão_6\WindowsFormsApplication3\WindowsFormsApplication3\bin\Debug\Data Receiver.exe.config
+C:\Users\paulo.fernandes\Dropbox\Mestrado\Redes de Sensores\WSN\AplicaçãoBS\versão_6\WindowsFormsApplication3\WindowsFormsApplication3\obj\Debug\Data Receiver.exe
+C:\Users\paulo.fernandes\Dropbox\Mestrado\Redes de Sensores\WSN\AplicaçãoBS\versão_6\WindowsFormsApplication3\WindowsFormsApplication3\obj\Debug\Data Receiver.pdb
+C:\Users\paulo.fernandes\Dropbox\Mestrado\Redes de Sensores\WSN\AplicaçãoBS\versão_7\WindowsFormsApplication3\WindowsFormsApplication3\bin\Debug\Data Receiver.exe.config
+C:\Users\paulo.fernandes\Dropbox\Mestrado\Redes de Sensores\WSN\AplicaçãoBS\versão_7\WindowsFormsApplication3\WindowsFormsApplication3\obj\Debug\Data Receiver.exe
+C:\Users\paulo.fernandes\Dropbox\Mestrado\Redes de Sensores\WSN\AplicaçãoBS\versão_7\WindowsFormsApplication3\WindowsFormsApplication3\obj\Debug\Data Receiver.pdb
+C:\Users\paulo.fernandes\Dropbox\Mestrado\Redes de Sensores\WSN\AplicaçãoBS\versão_7\WindowsFormsApplication3\WindowsFormsApplication3\bin\Debug\Data Receiver.exe.manifest
+C:\Users\paulo.fernandes\Dropbox\Mestrado\Redes de Sensores\WSN\AplicaçãoBS\versão_7\WindowsFormsApplication3\WindowsFormsApplication3\bin\Debug\Data Receiver.application
+C:\Users\paulo.fernandes\Dropbox\Mestrado\Redes de Sensores\WSN\AplicaçãoBS\versão_7\WindowsFormsApplication3\WindowsFormsApplication3\bin\Debug\Data Receiver.exe
+C:\Users\paulo.fernandes\Dropbox\Mestrado\Redes de Sensores\WSN\AplicaçãoBS\versão_7\WindowsFormsApplication3\WindowsFormsApplication3\bin\Debug\Data Receiver.pdb
+C:\Users\paulo.fernandes\Dropbox\Mestrado\Redes de Sensores\WSN\AplicaçãoBS\versão_7\WindowsFormsApplication3\WindowsFormsApplication3\obj\Debug\WindowsFormsApplication3.csprojResolveAssemblyReference.cache
+C:\Users\paulo.fernandes\Dropbox\Mestrado\Redes de Sensores\WSN\AplicaçãoBS\versão_7\WindowsFormsApplication3\WindowsFormsApplication3\obj\Debug\WindowsFormsApplication3.Form1.resources
+C:\Users\paulo.fernandes\Dropbox\Mestrado\Redes de Sensores\WSN\AplicaçãoBS\versão_7\WindowsFormsApplication3\WindowsFormsApplication3\obj\Debug\WindowsFormsApplication3.Properties.Resources.resources
+C:\Users\paulo.fernandes\Dropbox\Mestrado\Redes de Sensores\WSN\AplicaçãoBS\versão_7\WindowsFormsApplication3\WindowsFormsApplication3\obj\Debug\WindowsFormsApplication3.csproj.GenerateResource.Cache
+C:\Users\paulo.fernandes\Dropbox\Mestrado\Redes de Sensores\WSN\AplicaçãoBS\versão_7\WindowsFormsApplication3\WindowsFormsApplication3\obj\Debug\Data Receiver.exe.manifest
+C:\Users\paulo.fernandes\Dropbox\Mestrado\Redes de Sensores\WSN\AplicaçãoBS\versão_7\WindowsFormsApplication3\WindowsFormsApplication3\obj\Debug\Data Receiver.application
+C:\Users\paulo.fernandes\Dropbox\Mestrado\Redes de Sensores\WSN\Cliente BS\versão_7\WindowsFormsApplication3\WindowsFormsApplication3\bin\Debug\Data Receiver.exe.config
+C:\Users\paulo.fernandes\Dropbox\Mestrado\Redes de Sensores\WSN\Cliente BS\versão_7\WindowsFormsApplication3\WindowsFormsApplication3\obj\Debug\Data Receiver.exe
+C:\Users\paulo.fernandes\Dropbox\Mestrado\Redes de Sensores\WSN\Cliente BS\versão_7\WindowsFormsApplication3\WindowsFormsApplication3\obj\Debug\Data Receiver.pdb

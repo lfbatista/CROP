@@ -1,0 +1,769 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://crop-wsn.ddns.net/webservice.asmx/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://crop-wsn.ddns.net/webservice.asmx/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://crop-wsn.ddns.net/webservice.asmx/">
+      <s:element name="ValidaUser">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pass" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ValidaUserResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ValidaUserResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LerSectores">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pass" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LerSectoresResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LerSectoresResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LerSectoresMobile">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pass" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LerSectoresMobileResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LerSectoresMobileResult" type="tns:ArrayOfSectores" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfSectores">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Sectores" nillable="true" type="tns:Sectores" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Sectores">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="id_Sector" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="nome" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="LerTipoRegisto">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pass" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LerTipoRegistoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LerTipoRegistoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LerTipoRegistoMobile">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pass" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LerTipoRegistoMobileResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LerTipoRegistoMobileResult" type="tns:ArrayOfTipoDeRegisto" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfTipoDeRegisto">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="TipoDeRegisto" nillable="true" type="tns:TipoDeRegisto" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="TipoDeRegisto">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="id_Registo" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="tipoRegisto" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="LerUtilizadores">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pass" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LerUtilizadoresResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LerUtilizadoresResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LerSect_Topog">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pass" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LerSect_TopogResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LerSect_TopogResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LerRecolhaValoresMobile_1">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pass" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="id_sector" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="id_tp_registo" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LerRecolhaValoresMobile_1Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LerRecolhaValoresMobile_1Result" type="tns:ArrayOfRegistos" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfRegistos">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Registos" nillable="true" type="tns:Registos" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Registos">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="puser_id" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="psensor_id" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="pUsername" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="pParamSql" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="data_leitura" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="sector" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="t_reg" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="registo" type="s:float" />
+          <s:element minOccurs="1" maxOccurs="1" name="user_id" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="sensor_id" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="paramSql" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="LerRecolhaValoresMobile_2">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pass" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="id_sector" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="id_tp_registo" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="data" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LerRecolhaValoresMobile_2Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LerRecolhaValoresMobile_2Result" type="tns:ArrayOfRegistos" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LerRecolhaValoresMobile">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pass" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LerRecolhaValoresMobileResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LerRecolhaValoresMobileResult" type="tns:ArrayOfRegistos" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RegistarLeituraWSNMobile">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pass" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="tp_registo" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="leitura" type="s:float" />
+            <s:element minOccurs="1" maxOccurs="1" name="sensor_id" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="comentario" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RegistarLeituraWSNMobileResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="RegistarLeituraWSNMobileResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RegistarLeituraMobile">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pass" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="data" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="id_Sector" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="tp_registo" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="leitura" type="s:float" />
+            <s:element minOccurs="1" maxOccurs="1" name="sensor_id" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="user_id" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RegistarLeituraMobileResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="RegistarLeituraMobileResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RegistarLeituraListaMobile">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pass" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="lst" type="tns:ArrayOfRegistos" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RegistarLeituraListaMobileResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="RegistarLeituraListaMobileResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ApagaRegisto">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pass" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="data" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="tipo_registo" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="id_sector" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="id_sensor" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ApagaRegistoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ApagaRegistoResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LerComentarios">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pass" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LerComentariosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LerComentariosResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ValidaUserSoapIn">
+    <wsdl:part name="parameters" element="tns:ValidaUser" />
+  </wsdl:message>
+  <wsdl:message name="ValidaUserSoapOut">
+    <wsdl:part name="parameters" element="tns:ValidaUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="LerSectoresSoapIn">
+    <wsdl:part name="parameters" element="tns:LerSectores" />
+  </wsdl:message>
+  <wsdl:message name="LerSectoresSoapOut">
+    <wsdl:part name="parameters" element="tns:LerSectoresResponse" />
+  </wsdl:message>
+  <wsdl:message name="LerSectoresMobileSoapIn">
+    <wsdl:part name="parameters" element="tns:LerSectoresMobile" />
+  </wsdl:message>
+  <wsdl:message name="LerSectoresMobileSoapOut">
+    <wsdl:part name="parameters" element="tns:LerSectoresMobileResponse" />
+  </wsdl:message>
+  <wsdl:message name="LerTipoRegistoSoapIn">
+    <wsdl:part name="parameters" element="tns:LerTipoRegisto" />
+  </wsdl:message>
+  <wsdl:message name="LerTipoRegistoSoapOut">
+    <wsdl:part name="parameters" element="tns:LerTipoRegistoResponse" />
+  </wsdl:message>
+  <wsdl:message name="LerTipoRegistoMobileSoapIn">
+    <wsdl:part name="parameters" element="tns:LerTipoRegistoMobile" />
+  </wsdl:message>
+  <wsdl:message name="LerTipoRegistoMobileSoapOut">
+    <wsdl:part name="parameters" element="tns:LerTipoRegistoMobileResponse" />
+  </wsdl:message>
+  <wsdl:message name="LerUtilizadoresSoapIn">
+    <wsdl:part name="parameters" element="tns:LerUtilizadores" />
+  </wsdl:message>
+  <wsdl:message name="LerUtilizadoresSoapOut">
+    <wsdl:part name="parameters" element="tns:LerUtilizadoresResponse" />
+  </wsdl:message>
+  <wsdl:message name="LerSect_TopogSoapIn">
+    <wsdl:part name="parameters" element="tns:LerSect_Topog" />
+  </wsdl:message>
+  <wsdl:message name="LerSect_TopogSoapOut">
+    <wsdl:part name="parameters" element="tns:LerSect_TopogResponse" />
+  </wsdl:message>
+  <wsdl:message name="LerRecolhaValoresMobile_1SoapIn">
+    <wsdl:part name="parameters" element="tns:LerRecolhaValoresMobile_1" />
+  </wsdl:message>
+  <wsdl:message name="LerRecolhaValoresMobile_1SoapOut">
+    <wsdl:part name="parameters" element="tns:LerRecolhaValoresMobile_1Response" />
+  </wsdl:message>
+  <wsdl:message name="LerRecolhaValoresMobile_2SoapIn">
+    <wsdl:part name="parameters" element="tns:LerRecolhaValoresMobile_2" />
+  </wsdl:message>
+  <wsdl:message name="LerRecolhaValoresMobile_2SoapOut">
+    <wsdl:part name="parameters" element="tns:LerRecolhaValoresMobile_2Response" />
+  </wsdl:message>
+  <wsdl:message name="LerRecolhaValoresMobileSoapIn">
+    <wsdl:part name="parameters" element="tns:LerRecolhaValoresMobile" />
+  </wsdl:message>
+  <wsdl:message name="LerRecolhaValoresMobileSoapOut">
+    <wsdl:part name="parameters" element="tns:LerRecolhaValoresMobileResponse" />
+  </wsdl:message>
+  <wsdl:message name="RegistarLeituraWSNMobileSoapIn">
+    <wsdl:part name="parameters" element="tns:RegistarLeituraWSNMobile" />
+  </wsdl:message>
+  <wsdl:message name="RegistarLeituraWSNMobileSoapOut">
+    <wsdl:part name="parameters" element="tns:RegistarLeituraWSNMobileResponse" />
+  </wsdl:message>
+  <wsdl:message name="RegistarLeituraMobileSoapIn">
+    <wsdl:part name="parameters" element="tns:RegistarLeituraMobile" />
+  </wsdl:message>
+  <wsdl:message name="RegistarLeituraMobileSoapOut">
+    <wsdl:part name="parameters" element="tns:RegistarLeituraMobileResponse" />
+  </wsdl:message>
+  <wsdl:message name="RegistarLeituraListaMobileSoapIn">
+    <wsdl:part name="parameters" element="tns:RegistarLeituraListaMobile" />
+  </wsdl:message>
+  <wsdl:message name="RegistarLeituraListaMobileSoapOut">
+    <wsdl:part name="parameters" element="tns:RegistarLeituraListaMobileResponse" />
+  </wsdl:message>
+  <wsdl:message name="ApagaRegistoSoapIn">
+    <wsdl:part name="parameters" element="tns:ApagaRegisto" />
+  </wsdl:message>
+  <wsdl:message name="ApagaRegistoSoapOut">
+    <wsdl:part name="parameters" element="tns:ApagaRegistoResponse" />
+  </wsdl:message>
+  <wsdl:message name="LerComentariosSoapIn">
+    <wsdl:part name="parameters" element="tns:LerComentarios" />
+  </wsdl:message>
+  <wsdl:message name="LerComentariosSoapOut">
+    <wsdl:part name="parameters" element="tns:LerComentariosResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WebServiceSoap">
+    <wsdl:operation name="ValidaUser">
+      <wsdl:input message="tns:ValidaUserSoapIn" />
+      <wsdl:output message="tns:ValidaUserSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LerSectores">
+      <wsdl:input message="tns:LerSectoresSoapIn" />
+      <wsdl:output message="tns:LerSectoresSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LerSectoresMobile">
+      <wsdl:input message="tns:LerSectoresMobileSoapIn" />
+      <wsdl:output message="tns:LerSectoresMobileSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LerTipoRegisto">
+      <wsdl:input message="tns:LerTipoRegistoSoapIn" />
+      <wsdl:output message="tns:LerTipoRegistoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LerTipoRegistoMobile">
+      <wsdl:input message="tns:LerTipoRegistoMobileSoapIn" />
+      <wsdl:output message="tns:LerTipoRegistoMobileSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LerUtilizadores">
+      <wsdl:input message="tns:LerUtilizadoresSoapIn" />
+      <wsdl:output message="tns:LerUtilizadoresSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LerSect_Topog">
+      <wsdl:input message="tns:LerSect_TopogSoapIn" />
+      <wsdl:output message="tns:LerSect_TopogSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LerRecolhaValoresMobile_1">
+      <wsdl:input message="tns:LerRecolhaValoresMobile_1SoapIn" />
+      <wsdl:output message="tns:LerRecolhaValoresMobile_1SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LerRecolhaValoresMobile_2">
+      <wsdl:input message="tns:LerRecolhaValoresMobile_2SoapIn" />
+      <wsdl:output message="tns:LerRecolhaValoresMobile_2SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LerRecolhaValoresMobile">
+      <wsdl:input message="tns:LerRecolhaValoresMobileSoapIn" />
+      <wsdl:output message="tns:LerRecolhaValoresMobileSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RegistarLeituraWSNMobile">
+      <wsdl:input message="tns:RegistarLeituraWSNMobileSoapIn" />
+      <wsdl:output message="tns:RegistarLeituraWSNMobileSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RegistarLeituraMobile">
+      <wsdl:input message="tns:RegistarLeituraMobileSoapIn" />
+      <wsdl:output message="tns:RegistarLeituraMobileSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RegistarLeituraListaMobile">
+      <wsdl:input message="tns:RegistarLeituraListaMobileSoapIn" />
+      <wsdl:output message="tns:RegistarLeituraListaMobileSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ApagaRegisto">
+      <wsdl:input message="tns:ApagaRegistoSoapIn" />
+      <wsdl:output message="tns:ApagaRegistoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LerComentarios">
+      <wsdl:input message="tns:LerComentariosSoapIn" />
+      <wsdl:output message="tns:LerComentariosSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WebServiceSoap" type="tns:WebServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ValidaUser">
+      <soap:operation soapAction="http://crop-wsn.ddns.net/webservice.asmx/ValidaUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LerSectores">
+      <soap:operation soapAction="http://crop-wsn.ddns.net/webservice.asmx/LerSectores" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LerSectoresMobile">
+      <soap:operation soapAction="http://crop-wsn.ddns.net/webservice.asmx/LerSectoresMobile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LerTipoRegisto">
+      <soap:operation soapAction="http://crop-wsn.ddns.net/webservice.asmx/LerTipoRegisto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LerTipoRegistoMobile">
+      <soap:operation soapAction="http://crop-wsn.ddns.net/webservice.asmx/LerTipoRegistoMobile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LerUtilizadores">
+      <soap:operation soapAction="http://crop-wsn.ddns.net/webservice.asmx/LerUtilizadores" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LerSect_Topog">
+      <soap:operation soapAction="http://crop-wsn.ddns.net/webservice.asmx/LerSect_Topog" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LerRecolhaValoresMobile_1">
+      <soap:operation soapAction="http://crop-wsn.ddns.net/webservice.asmx/LerRecolhaValoresMobile_1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LerRecolhaValoresMobile_2">
+      <soap:operation soapAction="http://crop-wsn.ddns.net/webservice.asmx/LerRecolhaValoresMobile_2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LerRecolhaValoresMobile">
+      <soap:operation soapAction="http://crop-wsn.ddns.net/webservice.asmx/LerRecolhaValoresMobile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RegistarLeituraWSNMobile">
+      <soap:operation soapAction="http://crop-wsn.ddns.net/webservice.asmx/RegistarLeituraWSNMobile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RegistarLeituraMobile">
+      <soap:operation soapAction="http://crop-wsn.ddns.net/webservice.asmx/RegistarLeituraMobile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RegistarLeituraListaMobile">
+      <soap:operation soapAction="http://crop-wsn.ddns.net/webservice.asmx/RegistarLeituraListaMobile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ApagaRegisto">
+      <soap:operation soapAction="http://crop-wsn.ddns.net/webservice.asmx/ApagaRegisto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LerComentarios">
+      <soap:operation soapAction="http://crop-wsn.ddns.net/webservice.asmx/LerComentarios" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebServiceSoap12" type="tns:WebServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ValidaUser">
+      <soap12:operation soapAction="http://crop-wsn.ddns.net/webservice.asmx/ValidaUser" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LerSectores">
+      <soap12:operation soapAction="http://crop-wsn.ddns.net/webservice.asmx/LerSectores" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LerSectoresMobile">
+      <soap12:operation soapAction="http://crop-wsn.ddns.net/webservice.asmx/LerSectoresMobile" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LerTipoRegisto">
+      <soap12:operation soapAction="http://crop-wsn.ddns.net/webservice.asmx/LerTipoRegisto" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LerTipoRegistoMobile">
+      <soap12:operation soapAction="http://crop-wsn.ddns.net/webservice.asmx/LerTipoRegistoMobile" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LerUtilizadores">
+      <soap12:operation soapAction="http://crop-wsn.ddns.net/webservice.asmx/LerUtilizadores" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LerSect_Topog">
+      <soap12:operation soapAction="http://crop-wsn.ddns.net/webservice.asmx/LerSect_Topog" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LerRecolhaValoresMobile_1">
+      <soap12:operation soapAction="http://crop-wsn.ddns.net/webservice.asmx/LerRecolhaValoresMobile_1" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LerRecolhaValoresMobile_2">
+      <soap12:operation soapAction="http://crop-wsn.ddns.net/webservice.asmx/LerRecolhaValoresMobile_2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LerRecolhaValoresMobile">
+      <soap12:operation soapAction="http://crop-wsn.ddns.net/webservice.asmx/LerRecolhaValoresMobile" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RegistarLeituraWSNMobile">
+      <soap12:operation soapAction="http://crop-wsn.ddns.net/webservice.asmx/RegistarLeituraWSNMobile" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RegistarLeituraMobile">
+      <soap12:operation soapAction="http://crop-wsn.ddns.net/webservice.asmx/RegistarLeituraMobile" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RegistarLeituraListaMobile">
+      <soap12:operation soapAction="http://crop-wsn.ddns.net/webservice.asmx/RegistarLeituraListaMobile" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ApagaRegisto">
+      <soap12:operation soapAction="http://crop-wsn.ddns.net/webservice.asmx/ApagaRegisto" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LerComentarios">
+      <soap12:operation soapAction="http://crop-wsn.ddns.net/webservice.asmx/LerComentarios" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WebService">
+    <wsdl:port name="WebServiceSoap" binding="tns:WebServiceSoap">
+      <soap:address location="http://localhost/WebService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WebServiceSoap12" binding="tns:WebServiceSoap12">
+      <soap12:address location="http://localhost/WebService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Data Receiver.exe" version="1.0.0.9" publicKeyToken="1eb3ee8ea7b781f6" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Data Receiver" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Data Receiver.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Data Receiver.exe" size="216576">
+      <assemblyIdentity name="Data Receiver" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>d9+3v08LjpCcrM+5Ft+dn6lJ5ec=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Data Receiver.exe.config" size="656">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>nx+/KuxUaf1n4xHIsOcVqTg+Q70=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=EMPREIGALDE\paulo.fernandes" issuerKeyHash="9984922f1c2221e34b292b3b4b1e8016482f025a" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>OVDfaYL29RDp6ZPcE3SC/+/n/wI=</DigestValue></Reference></SignedInfo><SignatureValue>GTZkFahgw6kIOt2OHSsOkyaE+J2wUs0lJo4ifpDDLf/T5Qt4OSlvIZEXZBYZFSisvxyviWDOHXW0CnxXgx9n0UpYkkRk7QLsGgSQCXqTFrQd/j7qNMXLJ2NzKrw7cc/mkaeR0dNqUgu86r/1TpykSBjdmYts9GDZetaxsbwhXHc=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>82nrdd0YGNgl6fjpHPtThQyC3wvUgmmM+M+BfuGcADgsubi9D1hyKN0nA02TIGkxifR2zDMfxCBGsm2Q9VcokMjWyrdjivRRHrUdM4/VcNbrti1V1TOJ0ybeseKP9o09AKFrjYBLArVRw+G+5V5f4WmL/8YoVhXehCbgvvm/DdM=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="02ffe7efff827413dc93e9e910f5f68269df5039" Description="" Url=""><as:assemblyIdentity name="Data Receiver.exe" version="1.0.0.9" publicKeyToken="1eb3ee8ea7b781f6" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=EMPREIGALDE\paulo.fernandes</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>r7RBNNx/Sdz7nvOPPBLVcCk6d4c=</DigestValue></Reference></SignedInfo><SignatureValue>ODJhkf7gM1/PPLaFPgczQ3Oc+6/6c4eZYTJ/qCztHaFLtomrIQ4LEUNZ+RMAZzswlMhStmv7gq5XOHAgHnxfcsvkUbkkEg/vB1652ARDHxHQR3MAJTXU1rdja7qnD+pevZ9MD288iiElgVQc0ypqHpHrdhHSJkdIbTn6UTE64ow=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>82nrdd0YGNgl6fjpHPtThQyC3wvUgmmM+M+BfuGcADgsubi9D1hyKN0nA02TIGkxifR2zDMfxCBGsm2Q9VcokMjWyrdjivRRHrUdM4/VcNbrti1V1TOJ0ybeseKP9o09AKFrjYBLArVRw+G+5V5f4WmL/8YoVhXehCbgvvm/DdM=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIICBTCCAW6gAwIBAgIQOlMy78L13phPZo7JSvfgIzANBgkqhkiG9w0BAQUFADBBMT8wPQYDVQQDHjYARQBNAFAAUgBFAEkARwBBAEwARABFAFwAcABhAHUAbABvAC4AZgBlAHIAbgBhAG4AZABlAHMwHhcNMTUwNTI1MTEzMDM3WhcNMTYwNTI0MTczMDM3WjBBMT8wPQYDVQQDHjYARQBNAFAAUgBFAEkARwBBAEwARABFAFwAcABhAHUAbABvAC4AZgBlAHIAbgBhAG4AZABlAHMwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAPNp63XdGBjYJen46Rz7U4UMgt8L1IJpjPjPgX7hnAA4LLm4vQ9YcijdJwNNkyBpMYn0dswzH8QgRrJtkPVXKJDI1sq3Y4r0UR61HTOP1XDW67YtVdUzidMm3rHij/aNPQCha42ASwK1UcPhvuVeX+Fpi//GKFYV3oQm4L75vw3TAgMBAAEwDQYJKoZIhvcNAQEFBQADgYEANJroTxMC8iijjD2kLq3bj/vkRPv+9zqafd0Yq8Cd0GsqCfVIH9m+DSY6d6CkxJFcAoEwSPuDMpxBfyTL04PTUFYm+/fR/8nIneFbnjurhxZyM95K7DefUN8LKGCzTxM8eY8wrX/aVWvuLpddxjL1VQ3GrLQ3P2QFnLxBcfJIaWY=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
