@@ -9,7 +9,18 @@ Portugal being an agricultural country needs some innovation in the field of agr
 Hourly measurements of temperature and soil moisture levels, for crop's maintenance with a high level of precision.
 
 ###Architecture
+
 This project is based on a layered architecture due the potencial logistics challenges of each crop. On this basis, the BS is always positioned on the edge of each crop, in which the nodes communicate only to the forward nodes. The node that is transmiting data always choose the nearest node.
+
+![Architecture](http://i.imgur.com/nokQ9IZ.png)
+
+    FIG. 1.1: Crop - general architecture
+
+The nodes are placed every 50m due to communication among nodes
+
+![Architecture](http://i.imgur.com/XuOmm1P.jpg)
+
+    FIG. 1.2: Crop - optimal distance between the nodes
 
 ###Hardware
 ####Base Station
@@ -81,7 +92,54 @@ On an inside environment, good communication results were achieved between nodes
 Subsequently, these values stabilized with constant delivery rates, still only when it checked the successful communication.
 
 ####Autonomy tests
+**With Solar Panles**
+![with solar panels](http://i.imgur.com/STFIbm0.jpg)
 
+    FIG. 2.1: Tests with solar panels
+    
+    FIG. 2.2: Energy readings in test with 1 hour hibernation having solar panel in horizontal position
+    
+    FIG. 2.3: Energy readings in test with continuous debt having solar panels in horizontal position
+    
+    FIG. 2.4: Energy readings in test with continuous debt having solar panels in 45º position
+    
+    FIG. 2.5: Soil samples collect
+    
+    FIG. 2.6: Soil samples drying at the laboratory's oven
+    
+    FIG. 2.7: Reading of soil moisture level using Sensor on Arduino board
+    
+    FIG. 2.8: Humus soil portions with different moisture levels
+    
+    FIG. 2.9: Grit soil portions with different moisture levels
+    
+    FIG. 2.10: Lab calculations for each portion of soil where readings were made
+    
+    FIG. 2.11: Moisture sensor readings on each portion
+    
+    FIG. 2.12: Moisture sensor calibration
+    
+    FIG. 2.13: Temperature tests at the laboratory for sensor calibration on 20ºC
+    
+    FIG. 2.14: Temperature tests at the laboratory for sensor calibration on 50º
+    
+    FIG. 2.15: Waspmote node inside the oven
+    
+    FIG. 2.16: Temperature sensor readings inside the oven with 20ºC
+    
+    FIG. 2.17: Temperature sensor readings inside the oven with 30ºC
+    
+    FIG. 2.18: Temperature sensor readings inside the oven with 40ºC
+    
+    FIG. 2.19: Temperature sensor readings inside the oven with 50ºC
+![Temperature sensor readings inside the oven with 50ºC](http://i.imgur.com/3wHnXJv.png)
+    FIG. 2.20: Temperature sensor calibration
+**Conclusion**
+- With the possibility of using the same oven as for moisture study, different levels of temperature were used to determine the calibration for temperature sensor: 20ºC, 30ºC, 40ºC and 50ºC.
+- For each temperature level were made 50 readings more or less. Once the sensor achieved a stable reading, it´s value can be considered as the distinctive reading;
+- Using this same readings, a new mathematical model can be determined;
+- The model achieved is not as accurate as it should for temperature levels minor to 10ºC and higher than 40ºC;
+- This mathematical model will then be stored at the Data Base where the convertion from the sensor reading value to the real temperature value is made.
 
 ###Conclusions
 The final results proved that is possible to develop and implement an economic and functional solution to monitor an agriculture field at distance, but still not yet fully reliable. The solution proposed could help professionals of the agriculture area to have greater control over their productions without the necessity of their physical presence. However, the use of the Waspmote kits are not yet recommended due to irregularity and inconstancy of the board's performances.
@@ -94,5 +152,5 @@ N. Sakthipriya. An Effective Method for Crop Monitoring Using Wireless Sensor Ne
 X. Li, Y. Deng, L. Ding, Study on Precision Agriculture Monitoring Framework Based on WSN. Institute of Built Environment and Control, Zhongkai Unviersity of Agriculture and Engineering, South China University of Technology. Guangzhou, China.
 
 ###Paper and Presentation
-- [Paper](http://www.slideshare.net/batistaluisfilipe/crop-wireless-sensor-network-for-precision-agriculture-53379635)
-- [Presentation](http://www.slideshare.net/batistaluisfilipe/crop-wireless-sensor-network-for-precision-agriculture?related=1)
+[Paper](http://www.slideshare.net/batistaluisfilipe/crop-wireless-sensor-network-for-precision-agriculture-53379635)
+[Presentation](http://www.slideshare.net/batistaluisfilipe/crop-wireless-sensor-network-for-precision-agriculture?related=1)
