@@ -103,13 +103,25 @@ Subsequently, these values stabilized with constant delivery rates, still only w
 
     FIG. 2.2: Energy readings in test with 1 hour hibernation having solar panel in horizontal position
 
+**1st test conclusion**
+
+Waspmote programmed for cycles of hibernation with awakening of 60 minutes delay; battery level begin with 100%; solar panel placed horizontally towards south side - Battery level in the end of the day still 100%. Conclusion: Solar panel charge is higher than the energy consumption;
+
 ![Energy readings in test with continuous debt having solar panels in horizontal position](http://i.imgur.com/AzSz6wO.png) 
 
     FIG. 2.3: Energy readings in test with continuous debt having solar panels in horizontal position
+    
+**2nd test conclusion**
+
+Waspmote programmed for continued cycle (without hibernation); battery level at the beginning 78%; solar panel placed horizontally towards south side. Beginning of the test during the night (no charging) till the end of the next day. Conclusion: The charging periods are noticeable at the energy level graphic. During mid-day, at the peek of the sun, the charging is leveled with the energy consumption of the node;
 
 ![Energy readings in test with continuous debt having solar panels in 45º position](http://i.imgur.com/hn0XXbP.png)   
 
     FIG. 2.4: Energy readings in test with continuous debt having solar panels in 45º position
+    
+**3rd test conclusion**
+
+This time the same program but the solar panel placed towards the south side in a 45º angle. Conclusion: the battery charge is not as effective as in the horizontal position. This conclusion (panel in the horizontal position is more effective than in the 45º angle position) is understandable regarding the sun position during this period (Summer time). However, the doubt subsist into winter period when he daylight period is shorter and the sun position is lower. It is doubtful that in winter time, the horizontal position is still more effective.
 
 ![Soil samples collect](http://i.imgur.com/tiAcQbC.jpg)   
 
@@ -142,6 +154,13 @@ Subsequently, these values stabilized with constant delivery rates, still only w
 ![Moisture sensor calibration](http://i.imgur.com/8IOII2j.png)   
 
     FIG. 2.12: Moisture sensor calibration
+
+**Conclusion**
+
+- The sensor originally provided, did not supply the reliable readings. Therefore, the study was conducted using an analogic sensor connected with Arduino board;
+- Two samples of soil were selected: grit and humus. Each one was divided into seven portions previously dryed in the lab oven. Then, for each portion of soil, different amounts of water was added providing different readings. Once again the soil was sent to the lab for correct measuring of moisture level. At last, the lab results were compared with the sensor results. - A correlation was made providing a mathematical model to adjust the sensor readings to real moisture levels.
+- The mathematical model achieved was equivalent for both soil types.
+- This mathematical model will then be stored at the Data Base where the convertion from the sensor reading value to the real moisture value is made.
 
 ![Temperature tests at the laboratory for sensor calibration on 20ºC](http://i.imgur.com/kxczF3x.jpg)   
 
