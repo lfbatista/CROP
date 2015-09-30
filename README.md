@@ -215,3 +215,10 @@ X. Li, Y. Deng, L. Ding, Study on Precision Agriculture Monitoring Framework Bas
 [Paper](http://www.slideshare.net/batistaluisfilipe/crop-wireless-sensor-network-for-precision-agriculture-53379635)
 
 [Presentation](http://www.slideshare.net/batistaluisfilipe/crop-wireless-sensor-network-for-precision-agriculture?related=1)
+
+###Authors
+Luis Batista
+
+Pedro Reis
+
+Paulo Fernandes
